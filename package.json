@@ -1,0 +1,19 @@
+{
+  "name": "apachespark",
+  "version": "1.0.0",
+  "description": "this will download the image to your local registry",
+  "main": "index.js",
+  "scripts": {
+    "start": "docker run --rm -p 4040:4040 -p 8888:8888 -v $(pwd):/home/jovyan/work -e myEnvVar=huch  jupyter/all-spark-notebook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsynkov/spark-livy-on-airflow-workspace.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsynkov/spark-livy-on-airflow-workspace/issues"
+  },
+  "homepage": "https://github.com/dsynkov/spark-livy-on-airflow-workspace#readme"
+}
